@@ -1,0 +1,27 @@
+.container-fluid {
+  max-width: 1152px;
+}
+
+@media screen and (min-width: $sm) {
+  [class*='container'] {
+    padding-right: ($grid-gutter-width / 2) + 8;
+    padding-left: ($grid-gutter-width / 2) + 8;
+  }
+}
+
+@media screen and (min-width: $md) {
+  .row {
+    margin-right: -($grid-gutter-width / 2) + 8;
+    margin-left: -($grid-gutter-width / 2) + 8;
+  }
+
+  [class*='col'] {
+    padding-right: ($grid-gutter-width / 2) + 8;
+    padding-left: ($grid-gutter-width / 2) + 8;
+  }
+
+  [class*='container'] {
+    padding-right: ($grid-gutter-width / 2) + 8;
+    padding-left: ($grid-gutter-width / 2) + 8;
+  }
+}
